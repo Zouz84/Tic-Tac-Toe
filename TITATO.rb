@@ -67,11 +67,13 @@ end
 
 class Game
   # Quand le jeu s'initialize on demande le nom du joueur 1
-  puts "what's your name 1"
+  puts "what's your name player 1?"
   nom1 = gets.chomp
+  puts "#{nom1} is a cool name dude! "
   # on demande le nom du joueur 2
-  puts "what's your name 2"
+  puts "And you player 2, what's your name?"
   nom2 = gets.chomp
+  puts "ok #{nom2}, ready to kick #{nom1}'s ass? let's play!"
 
   player1 = Player.new(nom1,"X") #nom 1 refere à l'input du joueur 1
   player2 = Player.new(nom2,"O") #nom 2 refere à l'input du joueur 2 
